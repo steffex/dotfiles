@@ -26,4 +26,28 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Dock settings:
+################
+
+# Set dock to bottom
+defaults write com.apple.dock orientation -string bottom
+
+# Move dock to the start
+defaults write com.apple.dock pinning -string start
+
+# Set dock size to smallest
+defaults write com.apple.dock tilesize -int 16
+
+# Autohide dock
+defaults write com.apple.dock autohide -bool true
+
+# Minimize apps to application icon
+defaults write com.apple.dock minimize-to-application -bool true
+
+# Turn of magnification
+defaults write com.apple.dock magnification -bool false
+
+# Restart the dock
+killall Dock
+
 echo 'Done!'
