@@ -8,14 +8,19 @@ ln -s ~/dotfiles/.profile ~/.profile
 echo "Done!"
 
 echo "Installing git config..."
-if [ -f ~/.gitignore ]; then
-    rm ~/.gitignore
+if [ -f ~/.gitconfig ]; then
+    rm ~/.gitconfig
 fi
 ln -s ~/dotfiles/git/.gitconfig ~/.gitconfig
 echo "Done!"
 
 echo "Creating global gitignore..."
+if [ -f ~/dotfiles/git/gitignore-global ]; then
+    rm ~/dotfiles/git/gitignore-global
+fi
+
 ignore_list="CakePHP Composer Objective-C Python Global/Archives Global/OSX Global/SublimeText Global/Vagrant Global/vim Global/VirtualEnv"
+
 cd git
 for ignore in $ignore_list; do
     dir="gitignores/"
@@ -26,4 +31,6 @@ for ignore in $ignore_list; do
         echo "\n" >> gitignore-global
     fi
 done
+cd ..
 echo "Done!"
+
