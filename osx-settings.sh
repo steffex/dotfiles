@@ -26,3 +26,4 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+echo 'Done!'

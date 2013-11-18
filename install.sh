@@ -34,3 +34,4 @@ done
 cd ..
 echo "Done!"
 
+sh osx-settings.sh
