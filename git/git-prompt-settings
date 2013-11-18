@@ -1,7 +1,7 @@
 #git auto complete
-source git-completion.bash
+source ~/dotfiles/git/git-completion.bash
 #git prompt
-source git-prompt.sh
+source ~/dotfiles/git/git-prompt.sh
 
 #settings for the git prompt
 GIT_PS1_SHOWDIRTYSTATE=1
