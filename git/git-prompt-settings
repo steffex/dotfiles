@@ -1,0 +1,11 @@
+#git auto complete
+source git-completion.bash
+#git prompt
+source git-prompt.sh
+
+#settings for the git prompt
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUPSTREAM="auto git"
+GIT_PS1_SHOWCOLORHINTS=1

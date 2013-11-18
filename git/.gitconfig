@@ -1,0 +1,12 @@
+[core]
+    excludesfile = ~/dotfiles/git/gitignore-global
+[user]
+    name = Stefan Jansen
+    email = stefan@steffex.net
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    puff = pull --ff-only
+    pur = pull --rebase
