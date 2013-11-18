@@ -26,7 +26,7 @@ for ignore in $ignore_list; do
     dir="gitignores/"
     file_path="$dir$ignore.gitignore"
     if [ -f $file_path ]; then
-        echo "# Source file: $ignore.gitignore\n#########################\n\n" >> gitignore-global
+        echo "# Source file: $ignore.gitignore\n#########################\n" >> gitignore-global
         cat $file_path >> gitignore-global
         echo "\n" >> gitignore-global
     fi
