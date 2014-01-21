@@ -2,6 +2,8 @@ export EDITOR='subl -w'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+
 source ~/dotfiles/git/git-prompt-settings
 source ~/dotfiles/aliases
 
