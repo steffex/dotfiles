@@ -1,9 +1,12 @@
 [core]
     excludesfile = ~/dotfiles/git/gitignore-global
+[color]
+    ui = auto
 [user]
     name = Stefan Jansen
-    email = stefan@steffex.net
+    email = shjansen@gmail.com
 [alias]
+    ahead = log origin/develop..HEAD --oneline --decorate
     st = status
     ci = commit
     co = checkout
