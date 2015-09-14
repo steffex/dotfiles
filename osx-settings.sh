@@ -29,11 +29,8 @@ defaults write com.apple.dock mru-spaces -bool false
 # Dock settings:
 ################
 
-# Set dock to bottom
+# Set dock to left
 defaults write com.apple.dock orientation -string left
-
-# Move dock to the start
-defaults write com.apple.dock pinning -string end
 
 # Set dock size to smallest
 defaults write com.apple.dock tilesize -int 24
@@ -46,9 +43,6 @@ defaults write com.apple.dock minimize-to-application -bool true
 
 # Turn of magnification
 defaults write com.apple.dock magnification -bool false
-
-# Disable mirror effect
-defaults write com.apple.dock hide-mirror -bool true
 
 # Restart the dock
 killall Dock

@@ -19,7 +19,7 @@ if [ -f ~/dotfiles/git/gitignore-global ]; then
     rm ~/dotfiles/git/gitignore-global
 fi
 
-ignore_list="CakePHP Composer Objective-C Python Global/Archives Global/OSX Global/SublimeText Global/Vagrant Global/vim Global/VirtualEnv"
+ignore_list="CakePHP Composer Objective-C Swift Python Global/Archives Global/OSX Global/SublimeText Global/Xcode Global/Vagrant Global/vim Global/VirtualEnv"
 
 cd git
 for ignore in $ignore_list; do

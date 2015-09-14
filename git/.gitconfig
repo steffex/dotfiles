@@ -4,7 +4,7 @@
     ui = auto
 [user]
     name = Stefan Jansen
-    email = shjansen@gmail.com
+    email = stefan@steffex.net
 [alias]
     ahead = log origin/develop..HEAD --oneline --decorate
     st = status
@@ -15,3 +15,4 @@
     puff = pull --ff-only
     pur = pull --rebase
     flog = log --oneline --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    flon = log --max_count=20 --oneline --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

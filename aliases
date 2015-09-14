@@ -1,7 +1,5 @@
 # some default arguments for commands:
-alias wget='wget --no-check-certificate'
 alias grep='grep --color=auto'
-alias ls='ls -a'
 
 #reload profile (makes it easy to reload the profile after changes )
 alias reload="source ~/.profile"
