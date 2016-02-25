@@ -1,4 +1,4 @@
-export EDITOR='atom -w'
+export EDITOR='subl -wn'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
