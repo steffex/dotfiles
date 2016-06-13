@@ -26,6 +26,14 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Save screenshots to folder ~/Pictures/screenshots
+if [ ! -d "~/Pictures/screenshots"]; then
+	mkdir "~/Pictures/screenshots"
+fi
+defaults write com.apple.screencapture location ~/Pictures/screenshots/
+
+killall SystemUIServer
+
 # Dock settings:
 ################
 
