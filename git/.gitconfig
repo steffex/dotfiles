@@ -6,7 +6,8 @@
     name = Stefan Jansen
     email = stefan@steffex.net
 [alias]
-    ahead = log origin/develop..HEAD --oneline --decorate
+    ahead = "!f() { git log "$1"..HEAD --oneline --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'; }; f"
+    cf = "!f() { git diff-tree --no-commit-id --name-only -r "$1"; }; f"
     st = status
     ci = commit
     co = checkout
