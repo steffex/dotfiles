@@ -6,8 +6,6 @@
     name = Stefan Jansen
     email = stefan@steffex.net
 [alias]
-    ahead = "!f() { git log "$1"..HEAD --oneline --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'; }; f"
-    cf = "!f() { git diff-tree --no-commit-id --name-only -r "$1"; }; f"
     st = status
     ci = commit
     co = checkout
@@ -15,5 +13,15 @@
     df = diff
     puff = pull --ff-only
     pur = pull --rebase
+    prune = fetch --prune
+    undo = reset --soft HEAD^
+    stash-all = stash save --include-untracked
     flog = log --oneline --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     flon = log -n 20 --oneline --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    ahead = "!f() { git log "$1"..HEAD --oneline --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'; }; f"
+    cf = "!f() { git diff-tree --no-commit-id --name-only -r "$1"; }; f"
+[merge]
+    conflictstyle = diff3
+[status]
+    showUntrackedFiles = all
