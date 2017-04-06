@@ -4,7 +4,7 @@
     ui = auto
 [user]
     name = Stefan Jansen
-    email = stefan@steffex.net
+    email = stefan@8bitz.nl
 [alias]
     st = status
     ci = commit
